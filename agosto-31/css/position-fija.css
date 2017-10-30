@@ -1,0 +1,21 @@
+body{
+	background-color: grey;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+    background-color: lightblue;
+	margin: 20px;
+    text-align: center; 
+    font-size: 20px;
+
+}
+
+
+#fijo{
+	position: fixed;
+	left: 250px;
+	bottom: 
+
+}s

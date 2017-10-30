@@ -1,0 +1,26 @@
+body{
+	background-color: grey;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+    background-color: lightblue;
+	margin: 20px;
+
+}
+
+
+#padre{
+	width: 500px;
+	height: 500px;
+	background-color: pink;
+	position: relative;
+
+}
+.posicionada{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: royalblue;
+}
