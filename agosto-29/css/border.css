@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	width: 60%;
+	margin: 0 auto;
+
+}
+.circulo{
+	width: 200px; 
+	height: 200px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 30px;
+}
+
+.blue{
+		background-color: blue;
+}
+
+.green{
+		background-color: green;
+}
+
+.red{
+		background-color: red;
+}
+/*style
+solid -
+dotted
+dashed
+double
+groove -
+ridge -
+inset 
+outset*/

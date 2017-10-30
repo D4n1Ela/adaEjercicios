@@ -1,0 +1,13 @@
+hr{
+	border: 2px solid red;
+}
+
+div{
+	width: 200px; 
+	height: 200px;
+	background-color: pink;
+
+}
+section{
+	background-color: green;
+}
