@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.caja{
+	width: 200px;
+	display: inline-block;
+	border: 1px solid blue;
+	height: 200px;
+	overflow: hidden;
+
+}
+
+.texto{
+	display: none;
+}
+
+.contenido:hover .verMas{
+    display: none;
+}
+
+.contenido:hover .texto{
+    display: inline-block;
+}
+
+
+
+
+

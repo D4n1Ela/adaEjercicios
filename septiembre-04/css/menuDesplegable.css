@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background:cyan;
+	position: relative;
+}
+
+nav .subMenu{
+	position: absolute;
+	display: none;
+}
+
+nav ul li, .lista{
+	display: inline-block;
+}
+
+nav .ancla:hover .subMenu,.subMenu li{
+	display: block;
+}
+
+.pink:hover{
+	background-color: pink;
+}
+
+.red:hover{
+	background-color: red;
+}
+
+.green:hover{
+	background-color: green;
+}
+
+.blue:hover{
+	background-color: blue;
+}
