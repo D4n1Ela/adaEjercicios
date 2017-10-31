@@ -1,0 +1,36 @@
+#horizontal{
+	background-color: cyan;
+	/*width: 60%;
+	margin:auto;*/ /* No ponemos "margin: 0 auto" porque como es alineacion horizontal no nos interesa alinearlo en el top y bottom que es a lo que hace alusión el 0*/
+	text-align: center; /*Con esto centramos el <p>*/
+}
+
+#vertical{
+	background-color: pink;
+	height: 300px;
+	line-height: 300px; /*Distancia de una línea con otra como los botones*/
+	text-align: center;
+}
+
+.padre{
+	background-color: green;
+	width: 500px;
+	/* 0pcion 1 height: 500px;*/
+	/* opcion 2 padding: 30px;*/
+/* opcion 3*/	height: 500px;
+/* opcion 3*/	position: relative;
+}
+
+.hijo{
+	background-color: orange;
+	width: 250px;
+	height: 250px;
+/* opcion 3*/	position: absolute;
+/* opcion 3*/	top: 25%;
+/* opcion 3*/	left: 25%;
+
+/*opcion 3.1    top: 50%;*/ 
+/*opcion 3.1    transform: translateY(50%); */ 
+
+/* opcion 2 margin: 0 auto;*/
+}

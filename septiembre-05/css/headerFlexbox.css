@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-color: royalblue;
+	width: 80%;
+	height: 400px;
+	display: flex;
+    margin: 0 auto;
+    justify-content: space-between; /* Agrega espacio en el medio y no el around ya que tambien agrega un margen, luego 
+    c.Si uso el between luego con el padding le doy un espacio*/
+}
+
+.caja {
+	/*width: 400px;
+	height: 200px;*/
+	background:lightgreen;
+	margin: 20px;
+	padding: 20px;
+	font-size: 25px;
+	margin:  auto;
+	text-align: center;
+	
+}
+
+
+ul{
+	list-style: none;
+	background-color: pink;
+}
+
+li{
+	
+	float: left;
+	margin-right: 40px;
+
+}
