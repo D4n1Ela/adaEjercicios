@@ -1,0 +1,31 @@
+.caja{
+	/*border: 1px solid black;*/
+	padding: 30px;
+	font-size: 12px;
+}
+
+/**************************CAJAS*********************************/
+
+#blue{
+	background-color: blue;
+}
+
+#red{
+	background-color: red;
+}
+
+#pink{
+	background-color: pink;
+}
+
+#green{
+	background-color: green;
+}
+
+#lightgrey{
+	background-color: lightgrey;
+}
+
+#grey{
+	background-color: grey;
+}

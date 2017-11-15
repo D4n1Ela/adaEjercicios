@@ -1,0 +1,20 @@
+*{
+	box-sizing: border-box;
+	border: black solid 1px;
+}
+
+.lightblue{
+    background-color: lightblue;	
+}
+
+.pink{
+	background-color: pink;
+}
+
+.lightgreen{
+	background-color: lightgreen;
+}
+
+.height{
+    height: 100px;
+}

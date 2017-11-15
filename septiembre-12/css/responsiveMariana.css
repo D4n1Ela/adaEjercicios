@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#container{
+	width: 100%;             
+	height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*################################# HEADER ########################################*/
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #F707C7;
+	font-family:  'Baloo Tammudu', cursive;
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+/*################################### PRINCIPAL #####################################*/
+
+section{
+	width: 70%;
+	height: 500px;
+	background-color: #06A0F8;
+
+}
+
+aside{
+	width: 30%;
+	height: 500px;
+	background-color: #B3FA09;
+}
+
+footer{
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	font-family:  'Baloo Tammudu', cursive;
+	font-size: 20px;
+	background-color: #FA8008;
+}
+
+/*###################################*/
+
+@media screen and (max-width: 800px) {
+
+	#container{
+		flex-direction: column;
+	}
+
+
+	section{
+		width: 100%;
+	}
+
+	aside{
+		width: 100%;
+	}
+}
+
