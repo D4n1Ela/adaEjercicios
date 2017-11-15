@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(../img/hojas.jpg);
+}
+
+header{
+	padding: 20px;
+	width: 100%;
+	background: rgb(255,255,255,0.5);
+	background-color: pink;
+	display: flex;
+	flex-direction: row; /*Ya viene por defecto*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .menu a{
+	font-size: 30px; 
+	color: black;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header .menu a:hover{
+	font-weight: bold;
+}
+
