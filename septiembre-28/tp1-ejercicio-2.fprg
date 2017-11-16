@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="01/10/2017 10:17:24 p.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <assign variable="i" expression="1"/>
+            <declare name="y" type="String" array="True" size="8" variables="y[8]"/>
+            <assign variable="y[1]" expression="&quot;Lunes&quot;"/>
+            <assign variable="y[2]" expression="&quot;Martes&quot;"/>
+            <assign variable="y[3]" expression="&quot;Mi&#233;rcoles&quot;"/>
+            <assign variable="y[4]" expression="&quot;Jueves&quot;"/>
+            <assign variable="y[5]" expression="&quot;Viernes&quot;"/>
+            <assign variable="y[6]" expression="&quot;S&#225;bado&quot;"/>
+            <assign variable="y[7]" expression="&quot;Domingo&quot;"/>
+            <declare name="day" type="Integer" array="False" size="" variables="day"/>
+            <output expression="&quot;Ingrese el n&#250;mero de d&#237;a&quot;"/>
+            <input variable="day"/>
+            <while expression="i != day">
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <if expression="0&lt;i &amp;&amp; i&lt; 8">
+                <then>
+                    <output expression="&quot;El d&#237;a es:&quot; &amp; y[i]"/>
+                </then>
+                <else>
+                    <output expression="&quot;El numero ingresado no es v&#225;lido&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

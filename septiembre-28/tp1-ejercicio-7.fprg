@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="01/10/2017 11:32:34 p.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aumento" type="Integer" array="False" size="" variables="aumento"/>
+            <declare name="montoTotal" type="Integer" array="False" size="" variables="montoTotal"/>
+            <declare name="anios" type="Integer" array="False" size="" variables="anios"/>
+            <output expression="&quot;Ingresar la cantidad de anios&quot;"/>
+            <input variable="anios"/>
+            <if expression="anios&gt;=10">
+                <then>
+                    <assign variable="aumento" expression="(40000 * 10)/100"/>
+                    <assign variable="montoTotal" expression="40000+aumento"/>
+                    <output expression="&quot;El aumento es&quot; &amp; montoTotal"/>
+                </then>
+                <else>
+                    <if expression="anios&lt;10 &amp;&amp; anios&gt;=5">
+                        <then>
+                            <assign variable="aumento" expression="(40000 * 7)/100"/>
+                            <assign variable="montoTotal" expression="40000+aumento"/>
+                            <output expression="&quot;El aumento es&quot; &amp; montoTotal"/>
+                        </then>
+                        <else>
+                            <if expression="anios&lt;5 &amp;&amp; anios&gt;=3">
+                                <then>
+                                    <assign variable="aumento" expression="(40000 * 5)/100"/>
+                                    <assign variable="montoTotal" expression="40000+aumento"/>
+                                    <output expression="&quot;El aumento es&quot; &amp; montoTotal"/>
+                                </then>
+                                <else>
+                                    <if expression="anios&gt;0 &amp;&amp; anios&lt;3">
+                                        <then>
+                                            <assign variable="aumento" expression="(40000 * 3)/100"/>
+                                            <assign variable="montoTotal" expression="40000+aumento"/>
+                                            <output expression="&quot;El aumento es&quot; &amp; montoTotal"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;No tiene aumento&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="01/10/2017 11:14:01 p.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="month" type="String" array="True" size="4" variables="month[4]"/>
+            <assign variable="month[0]" expression="&quot;Abril&quot;"/>
+            <assign variable="month[1]" expression="&quot;Junio&quot;"/>
+            <assign variable="month[2]" expression="&quot;Septiembre&quot;"/>
+            <assign variable="month[3]" expression="&quot;Noviembre&quot;"/>
+            <declare name="Febrero" type="String" array="False" size="" variables="Febrero"/>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <assign variable="i" expression="0"/>
+            <declare name="userMonth" type="String" array="False" size="" variables="userMonth"/>
+            <output expression="&quot;Ingrese el mes&quot;"/>
+            <input variable="userMonth"/>
+            <declare name="Abril" type="String" array="False" size="" variables="Abril"/>
+            <declare name="found" type="Boolean" array="False" size="" variables="found"/>
+            <assign variable="found" expression="false"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <if expression="userMonth == &quot;Abril&quot; &amp;&amp; found == false">
+                    <then>
+                        <output expression="&quot;El mes tiene 30 d&#237;as&quot;"/>
+                        <assign variable="found" expression="true"/>
+                    </then>
+                    <else>
+                        <assign variable="i" expression="i+1"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="userMonth == &quot;Febrero&quot; &amp;&amp; found == false">
+                <then>
+                    <output expression="&quot;El mes tiene 28 d&#237;as&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;El mes tiene 31 d&#237;as&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

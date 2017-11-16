@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="01/10/2017 11:51:08 p.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size="" variables="x"/>
+            <declare name="y" type="Integer" array="False" size="" variables="y"/>
+            <declare name="z" type="Integer" array="False" size="" variables="z"/>
+            <declare name="val1" type="Integer" array="False" size="" variables="val1"/>
+            <assign variable="val1" expression="0"/>
+            <declare name="val2" type="Integer" array="False" size="" variables="val2"/>
+            <assign variable="val2" expression="0"/>
+            <output expression="&quot;Ingresar el valor de x&quot;"/>
+            <input variable="x"/>
+            <output expression="&quot;Ingresar el valor de y&quot;"/>
+            <input variable="y"/>
+            <output expression="&quot;Ingresar el valor de z&quot;"/>
+            <input variable="z"/>
+            <if expression="x &gt; y">
+                <then>
+                    <assign variable="val1" expression="x - z"/>
+                    <if expression="val1 &gt; y">
+                        <then>
+                            <output expression="&quot;x-z es mayor que y&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;X-z es menor que y&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="val2" expression="(x + z)*y"/>
+                    <output expression="&quot;X menor que y, por lo cual el resultado de (x+z)*y es igual a:&quot; &amp; val2"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

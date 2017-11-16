@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="01/10/2017 09:45:56 p.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size="" variables="x"/>
+            <output expression="&quot;Ingrese el valor de x&quot;"/>
+            <input variable="x"/>
+            <if expression="(x mod 2)== 0">
+                <then>
+                    <output expression="&quot;x es par&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;x es impar&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

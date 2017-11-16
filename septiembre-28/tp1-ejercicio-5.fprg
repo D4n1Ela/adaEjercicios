@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="02/10/2017 12:17:59 a.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <assign variable="i" expression="0"/>
+            <declare name="vocal" type="String" array="True" size="5" variables="vocal[5]"/>
+            <assign variable="vocal[0]" expression="&quot;a&quot;"/>
+            <assign variable="vocal[1]" expression="&quot;e&quot;"/>
+            <assign variable="vocal[2]" expression="&quot;i&quot;"/>
+            <assign variable="vocal[3]" expression="&quot;o&quot;"/>
+            <assign variable="vocal[4]" expression="&quot;u&quot;"/>
+            <declare name="userWord" type="String" array="False" size="" variables="userWord"/>
+            <output expression="&quot;Ingresar el string&quot;"/>
+            <input variable="userWord"/>
+            <while expression="(i&lt;5) and (userWord != vocal[i])">
+                <assign variable="i" expression="i+1"/>
+                <output expression="&quot;El valor de i es primer&quot; &amp;i"/>
+            </while>
+            <if expression="userWord == vocal[i]">
+                <then>
+                    <output expression="&quot;El string ingresado es una vocal&quot;"/>
+                    <output expression="&quot;El valor de i es&quot; &amp;i"/>
+                </then>
+                <else>
+                    <output expression="&quot;El string ingresado NO es una vocal&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
