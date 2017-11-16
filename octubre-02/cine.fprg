@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="02/10/2017 11:56:04 a.m."/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entrada" type="Integer" array="False" size="" variables="entrada"/>
+            <declare name="entrada1" type="Integer" array="False" size="" variables="entrada1"/>
+            <declare name="entrada2" type="Integer" array="False" size="" variables="entrada2"/>
+            <declare name="descuento" type="Integer" array="False" size="" variables="descuento"/>
+            <declare name="monto" type="Integer" array="False" size="" variables="monto"/>
+            <declare name="montoTotal" type="Integer" array="False" size="" variables="montoTotal"/>
+            <declare name="comboB" type="Integer" array="False" size="" variables="comboB"/>
+            <declare name="pochoclo" type="Integer" array="False" size="" variables="pochoclo"/>
+            <declare name="dia" type="String" array="False" size="" variables="dia"/>
+            <declare name="lunes" type="String" array="False" size="" variables="lunes"/>
+            <declare name="martes" type="String" array="False" size="" variables="martes"/>
+            <declare name="miercoles" type="String" array="False" size="" variables="miercoles"/>
+            <declare name="sabado" type="String" array="False" size="" variables="sabado"/>
+            <declare name="domingo" type="String" array="False" size="" variables="domingo"/>
+            <declare name="hija" type="Boolean" array="False" size="" variables="hija"/>
+            <declare name="amigo" type="Boolean" array="False" size="" variables="amigo"/>
+            <assign variable="entrada" expression="150"/>
+            <assign variable="comboB" expression="100"/>
+            <assign variable="pochoclo" expression="50"/>
+            <output expression="&quot;Que dia es&quot;"/>
+            <input variable="dia"/>
+            <declare name="pelicula" type="String" array="False" size="" variables="pelicula"/>
+            <output expression="&quot;Que tipo de pelicula es? ATP o Mayor18&quot;"/>
+            <input variable="pelicula"/>
+            <if expression="pelicula == &quot;ATP&quot;">
+                <then>
+                    <if expression="dia == &quot;lunes&quot; || dia == &quot;martes&quot; || dia == &quot;miercoles&quot;">
+                        <then>
+                            <assign variable="descuento" expression="(entrada * 50)/100"/>
+                            <assign variable="entrada1" expression="entrada - descuento"/>
+                            <output expression="&quot;Vino Con la hija? true o false&quot;"/>
+                            <input variable="hija"/>
+                            <if expression="hija == true">
+                                <then>
+                                    <assign variable="descuento" expression="(entrada * 20)/100"/>
+                                    <assign variable="entrada2" expression="entrada - descuento"/>
+                                    <assign variable="monto" expression="entrada2 + comboB"/>
+                                    <assign variable="montoTotal" expression="monto + entrada"/>
+                                    <output expression="&quot;El costo total a pagar es:&quot; &amp; montoTotal &amp;&quot; pesos&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="montoTotal" expression="entrada1 + pochoclo"/>
+                                    <output expression="&quot;El costo total a pagar es:&quot; &amp; montoTotal &amp;&quot; pesos&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="montoTotal" expression="entrada + pochoclo"/>
+                            <output expression="&quot;El costo total a pagar es:&quot; &amp; montoTotal &amp;&quot; pesos&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="dia == &quot;lunes&quot; || dia == &quot;martes&quot; || dia == &quot;miercoles&quot;">
+                        <then>
+                            <assign variable="descuento" expression="(entrada * 50)/100"/>
+                            <assign variable="entrada1" expression="entrada - descuento"/>
+                            <assign variable="montoTotal" expression="entrada1 + pochoclo"/>
+                            <output expression="&quot;El costo total a pagar es:&quot; &amp; montoTotal &amp;&quot; pesos&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Viene con tres amigos? true o false&quot;"/>
+                            <input variable="amigo"/>
+                            <if expression="(dia == &quot;sabado&quot; || dia == &quot;domingo&quot;) &amp;&amp; amigo == true">
+                                <then>
+                                    <assign variable="entrada3" expression="entrada * 2"/>
+                                    <assign variable="montoTotal" expression="entrada3 + pochoclo"/>
+                                    <output expression="&quot;El costo total a pagar es:&quot; &amp; montoTotal &amp;&quot; pesos&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="entrada" expression="entrada + pochoclo"/>
+                                    <output expression="&quot;El costo total a pagar es:&quot; &amp; entrada &amp;&quot; pesos&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
