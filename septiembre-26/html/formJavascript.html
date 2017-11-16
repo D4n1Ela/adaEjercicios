@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<script type="text/javascript">
+		function validForm(){
+			var name = "pepe";
+			var pass = "1234"
+			var fname = document.forms["myFirstScript"]["firstName"].value;
+			var vpass = document.forms["myFirstScript"]["myPass"].value;
+			if (fname == name && vpass == pass ){
+				alert("Bienvenida");
+			}else{
+				alert("Error");
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<form name="myFirstScript" action="formJavascript.html" onsubmit="return validForm()" method="post">
+			<label for="">
+			    <input type="text" name="firstName" >
+			    <br><br>
+
+			    <input type="text" name="myPass" >
+			    
+			    <br><br>
+			    <input type="submit" value="Submit">
+			</label>
+		</form>
+	</div>
+</body>
+</html>
+
+
+<!--form name="myForm" action="/action_page_post.php"onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script-->
