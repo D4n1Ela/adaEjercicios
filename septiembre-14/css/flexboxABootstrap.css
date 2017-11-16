@@ -1,0 +1,91 @@
+body{
+	background: #000 url(../img/fondo.jpg) ;
+	font-family: 'Roboto', sans-serif;
+}
+
+#containerStyle{
+	margin:0px 190px 0px 190px;
+}
+
+
+
+/*******************HEADER***************************/
+
+header{
+	background:rgba(255,255,255,0.5);
+}
+
+header .menu{
+	    border: 1px solid black;
+}
+
+header .menu a{
+	font-size: 1.2em;
+	color:black;
+	border: 1px solid black;
+	margin: 0px 10px;
+	/*padding-left: 20px;*/
+}
+
+header .menu a:hover{
+	font-weight: bold;
+}
+
+header .outside{
+	padding: 10px 0px;
+}
+
+
+
+/*******************PRINCIPAL***************************/
+
+section.principal{
+	background: #82E8B7;
+	padding: 20px;
+}
+
+section article .banner{
+	border:1px solid black;
+}
+
+section article h1{
+	padding-bottom: 20px;
+	font-size: 2em;
+	border:1px solid black;
+} 
+
+section article p{
+	font-size: 1em;
+	line-height: 27px;
+}
+
+aside .caja {
+	background:grey;
+	border:1px solid black;
+}
+
+aside .caja p{
+	margin:20px 5px;
+	padding:88px 0; 
+	border:3px dashed black;
+	font-size: 1em;
+}
+
+
+/*******************FOOTER***************************/
+
+footer{
+	background:rgba(255,255,255,0.5);
+	padding: 30px 20px;
+	font-size: 16px;
+}
+
+footer .redes a{
+	text-decoration: underline;
+	color:black;
+	margin-left: 20px;
+}
+
+footer .redes a:hover{
+	text-decoration: none;
+}
