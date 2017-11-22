@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/vinculoJqueryHtml.js"></script>
+</head>
+<body>
+	<div class="container">
+	    
+		<div class="row">
+			<div class="col-lg-12">
+
+				    <div class="table-responsive">
+					<table class="table table-bordered table-hover table-condensed">
+					
+						<tr class="myRow_1 success">
+							<td>1</td>
+							<td>Jaime</td>
+							<td>Perez</td>
+							<td>28</td>
+							<td><button type="button" id="btnMyEdit_1" class="btnEdit">Edit</button></td>
+							<td><button type="button" class="btnDelete">Delete</button></td>
+						</tr>
+						<tr class="myRow_2 success">
+							<td>2</td>
+							<td>Lalo</td>
+							<td>Pirulo</td>
+							<td>32</td>
+							<td><button type="button" id="testingPropAndAttr" class="btnEdit">Edit</button></td>
+							<td><button type="button" class="btnDelete">Delete</button></td>
+						</tr>
+						<tr class="myRow_3 success">
+							<td>3</td>
+							<td>Joaquin</td>
+							<td>Burbuja</td>
+							<td>45</td>
+							<td><button type="button" id="testingPropAndAttr"  class="btnEdit">Edit</button></td>
+							<td><button type="button" class="btnDelete">Delete</button></td>
+						</tr>
+					                    
+					</table>
+				</div>
+                
+		    	<div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content well-lg">
+			        <!--div class="modal-header"-->
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <!--h4 class="modal-title">Modal Header</h4-->
+			        <!--/div-->
+			        <!--div class="modal-body"-->
+			          <p>Estás seguro de borrar la fila?</p>
+			        <!--/div-->
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-danger" data-dismiss="modal">Accept</button>
+			          <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+			        </div>
+			      </div>
+			      
+  		</div>
+	    </div>
+
+			</div>
+		</div>
+
+
+	</div>
+<script>
+/*
+	$(document).ready(function(){
+	$("#btnMyEdit").on("click", function(){
+		$("#myModal").modal();
+	})
+});
+*/
+</script>
+
+</body>
+</html>
