@@ -15,34 +15,67 @@
 			<div class="col-lg-12">
 
 				    <div class="table-responsive">
-					<table class="table table-bordered table-hover table-condensed">
+					<table id="myTable" class="table table-bordered table-hover table-condensed">
 					
-						<tr class="myRow_1 success">
+						<!--tr class="success" id="registry_1">
 							<td>1</td>
-							<td>Jaime</td>
-							<td>Perez</td>
-							<td>28</td>
-							<td><button type="button" id="btnMyEdit_1" class="btnEdit">Edit</button></td>
-							<td><button type="button" class="btnDelete">Delete</button></td>
+							<td><input id="name" class="reg1" disabled="false" value="Pruebo"></td>
+							<td><input id="lastName" class="reg1" disabled="" value="El"></td>
+							<td><input id="age" class="reg1" disabled="" value="Disabled"></td>
+							<td><button data-rg=".reg1" type="button" id="btnMyEdit_1" class="btnEdit">Edit</button></td>
+							<td><button id="1" type="button" class="btnDelete">Delete</button></td>
 						</tr>
-						<tr class="myRow_2 success">
+						<tr class="success" id="registry_2">
 							<td>2</td>
 							<td>Lalo</td>
 							<td>Pirulo</td>
 							<td>32</td>
 							<td><button type="button" id="testingPropAndAttr" class="btnEdit">Edit</button></td>
-							<td><button type="button" class="btnDelete">Delete</button></td>
+							<td><button id="2" type="button" class="btnDelete">Delete</button></td>
 						</tr>
-						<tr class="myRow_3 success">
+						<tr class="success" id="registry_3">
 							<td>3</td>
 							<td>Joaquin</td>
 							<td>Burbuja</td>
 							<td>45</td>
 							<td><button type="button" id="testingPropAndAttr"  class="btnEdit">Edit</button></td>
-							<td><button type="button" class="btnDelete">Delete</button></td>
+							<td><button id="3" type="button" class="btnDelete">Delete</button></td>
 						</tr>
-					                    
+						<tr class="success" id="registry_4">
+							<td>4</td>
+							<td>Martin</td>
+							<td>Bellota</td>
+							<td>45</td>
+							<td><button type="button" id="testingPropAndAttr"  class="btnEdit">Edit</button></td>
+							<td><button id="4" data-rg="#registry_4" type="button" class="btnDelete">Delete</button></td>
+						</tr>
+						<tr class="success" id="registry_5">
+							<td>5</td>
+							<td><input id="name" class="reg5" disabled="false" value="Pruebo"></td>
+							<td><input id="lastName" class="reg5" disabled="" value="El"></td>
+							<td><input id="age" class="reg5" disabled="" value="Disabled"></td>
+							<td><button data-rg=".reg5" type="button" id="btnMyEdit_5" class="btnEdit">Edit</button></td>
+							<td><button id="5" type="button" class="btnDelete">Delete</button></td>
+						</tr>
+						<tr class="success" id="registry_6">
+							<td>6</td>
+							<td><input id="name" class="reg6" disabled="false" value="Pruebo"></td>
+							<td><input id="lastName" class="reg6" disabled="" value="El"></td>
+							<td><input id="age" class="reg6" disabled="" value="Disabled"></td>
+							<td><button data-rg=".reg6" type="button" id="btnMyEdit_6" class="btnEdit">Edit</button></td>
+							<td><button id="1" type="button" class="btnDelete">Delete</button></td>
+
+						</tr-->               
 					</table>
+					<button id="btnAdd" type="button" >Add</button>
+                </div>
+
+				<div>
+					<form action="">
+						<input id="newName" type="" value="Martin">
+						<input id="newLastname" type="" value="Fernandez">
+						<input id="newAge" type="" value="50">
+					</form>
 				</div>
                 
 		    	<div class="modal fade" id="myModal" role="dialog">
@@ -55,7 +88,7 @@
 			          <!--h4 class="modal-title">Modal Header</h4-->
 			        <!--/div-->
 			        <!--div class="modal-body"-->
-			          <p>Estás seguro de borrar la fila?</p>
+			          <p>Estás seguro de Editar la fila?</p>
 			        <!--/div-->
 			        <div class="modal-footer">
 			          <button type="button" class="btn btn-danger" data-dismiss="modal">Accept</button>

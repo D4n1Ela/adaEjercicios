@@ -17,17 +17,22 @@ $(document).ready(function(){
 		$(".btnDelete").on("click", function(){
 			$(this).parent().remove();
 		})	
-	    */
+	    
+	    $("li").on("click", function(){
+	    	$(this).toggleClass("underline");    		
+    	})
+    	*/
 	});
 
-	function deleteFather(){
+	function deleteParent(){
 		$(this).parent().remove();
 	}
- 
-    $(document).on("click", ".btnDelete", deleteFather);
+    $(document).on("click", ".btnDelete", deleteParent);
 
-
-
+    function underline(){
+    	$(this).toggleClass("underline");
+    }
+    $(document).on("click", "li", underline);
 	
 })
 /*	
@@ -75,4 +80,16 @@ $(".btnDelete").on("click", function(){
 	})	
 
 Funcion anonima si lo que se hace se hace adentro
-*/
+
+
+Detener la ejecución normal de un evento
+$("a").on("click", function(event){
+	event.preventDefault()
+})
+
+
+Convertir un formulario en un json
+. Utilizarlo en el Proyecto Final
+. JSON={"CLAVE":"VALOR", "CLAVE":"VALOR" } 
+. "VALOR" Si lo necesito como número tengo que pasarlo.
+. Json se recorre de una forma particular en javascript

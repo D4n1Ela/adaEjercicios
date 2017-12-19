@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<script type="text/javascript">
+		
+			function validar(){
+				name = document.getElementById("user");
+				pass = document.getElementById("pass");
+
+				if (user.value == "" || pass.value.length == 0)  {
+					alert("Ambos son obligatorios");
+				}else{alert("Todo Ok");}
+				
+			}
+	</script>
+</head>
+<body>
+	<div>
+		<form name="myFirstScript" action="#"  method="get">
+			
+		    Nombre: <input id="user" type="text" name="user" >
+		    Contraseña: <input id="pass" type="password" name="pass" >
+            <button onclick="validar()">Click me</button>
+	
+		</form>
+	</div>
+</body>
+</html>
+<!--Para pensar
+var e = document.getElementById("test");
+				e.style.color = color;
+
+				var b = document.getElementById("text");
+				b.style.color = color;
+			}
+-->
+
+<!--form name="myForm" action="/action_page_post.php"onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script-->

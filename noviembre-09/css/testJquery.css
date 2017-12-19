@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.contChild{
+	width: 33%;
+	text-align:center;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Son 20 tiros o sale con la generala
+No es necesario con los tres tiros solo con un random
+Si no gane guardar el puntaje intermedio. 
+*/

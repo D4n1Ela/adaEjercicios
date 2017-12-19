@@ -39,3 +39,7 @@ button{
 .myRed{
 	color: red;
 }
+
+.underline{
+	text-decoration: line-through;
+}
